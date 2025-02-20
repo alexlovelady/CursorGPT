@@ -57,7 +57,7 @@ Set your OpenAI API key in the script:
 ## Run the script:
 
   ```bash
-    python screen_ocr_gpt.py
+    python CursorGPT.py
   ```
 
 ## Trigger the capture:
