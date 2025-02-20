@@ -8,7 +8,6 @@ A Python script that lets you select an area on your screen, perform OCR using [
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [License](#license)
 
 ## Features
 - **Interactive Screen Capture**: Drag-select any region on your screen for OCR.
@@ -30,17 +29,11 @@ A Python script that lets you select an area on your screen, perform OCR using [
 ## Installation
 1. Clone this repository:
    ```bash
-     git clone https://github.com/yourusername/screen-ocr-gpt.git
-     cd screen-ocr-gpt
+     git clone https://github.com/alexlovelady/CursorGPT.git
+     cd CursorGPT
    ```
    
 2. Install Python dependencies:
-
-  ```bash
-    pip install -r requirements.txt
-    Or manually install:
-  ```
-  
   ```bash
     pip install pyautogui pytesseract openai keyboard
   ```
