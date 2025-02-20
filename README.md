@@ -47,26 +47,32 @@ Verify pytesseract can find the Tesseract executable:
 If necessary, set pytesseract.pytesseract.tesseract_cmd to your Tesseract path in the script.
 
 
-Usage
+##Usage
 Set your OpenAI API key in the script:
 
   ```python
     openai.api_key = "YOUR-OPENAI-API-KEY"
   ```
 
-Run the script:
+##Run the script:
 
   ```bash
     python screen_ocr_gpt.py
   ```
 
-Trigger the capture:
+##Trigger the capture:
 
-Press Ctrl+Shift+Q to open the drag-select overlay.
-Drag a box around the text you want to capture and release.
-The script performs OCR, sends the text to GPT, and displays the answer in a small tooltip near your mouse.
-Close the tooltip or wait for it to disappear automatically.
+1. Press Ctrl+Shift+Q to open the drag-select overlay.
+2. Drag a box around the text you want to capture and release.
+3. The script performs OCR, sends the text to GPT, and displays the answer in a small tooltip near your mouse.
+4. Close the tooltip or wait for it to disappear automatically.
 
-Configuration
-Change the tooltip duration by adjusting show_tooltip(answer, duration=10).
+##Configuration:
+
+Change the tooltip duration by adjusting 
+
+  ```python
+    show_tooltip(answer, duration=10)
+  ```
+
 Modify the system prompt (in ask_chatgpt) if you want more verbose or different styles of answers.
